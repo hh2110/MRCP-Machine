@@ -1,0 +1,64 @@
+short term:
+- classify the 'past-paper' questions and give a topic
+- gold labels - labels that are gold standard - within the data already
+- get silver labels by training a  
+
+
+
+- taking the gold labels and build a classifier to predict the silver labels
+    - DONE will need to tokenize data
+    - DONE remove stopwords
+    - latent semanitc analysis - find synonyms and reduce dimensionality of problem
+        - QUESTION: not sure how to use to find synonyms
+        - applied PCA to see if groups of words can be used to define topics
+        - mapped to two dimensions
+            - seen that there are two groups of comments.
+            - one is general and one is specific
+            - NEXT: we can unlabel the general ones and put them in same group as misc and past paper
+            - this could make our final mapping more accurate
+            - then we can also run the svd on the reduced dataset
+        - was able to see that some topics are very general - perhaps better to inlcude thos in unlabel;led topics
+        - could potentially map to more to see better compartmentalisation
+        - check out multi-dimensional scaling
+            - it reduces dimensions but keeps points close to one another
+        - make purple points above yellow points to see them more- apply Bag of words / TF-IDF
+    - using SVD
+        - DONE can use spacy to run on only nouns via POS
+        - DONE carry out SVD on nouns only
+        - DONE possible to reduce feature sapce from 11,000 words to 3500 features and retain 95% variance
+    - train a classifier to predict silver labels using new feature space from SVD
+        - Bayes classifier, RF (with boosting), shallow NN
+        - RNN
+        - first use all words 
+        - perhaps only using nouns would be better for this task?? CHECK
+        - also only options after stopwords removed?? CHECK
+        - could potentially remove more stopwords
+    - issue of unequally distributed dataset - figure out what methods there are to combat this
+    
+    
+    
+- create my own embedding to see relationships between words - 
+- mark newman - scispacy - spacy models trained on biomedical text
+- take MNs embedding and create a representation of my data and run through classifier. 
+- check out spacy ( go to for NLP in python)
+- nltk - old school, spacy is newer, more robust
+- check for quantitative way to detemrine if embedding is good vs sense check
+
+- set up git repo 
+- set up trello board
+
+long term:
+- use AWS/Azure to deploy learning in the cloud
+- predict the answer to a question given: description, question & options
+- seq to seq:
+    - RNN
+    - language models
+    - attention
+    - course by stanford on NLP
+    - will require cloud computing
+
+very long term:
+    - consider how AI in medicine works? 
+    - would an approach of learning from exam questions help in GP AI apps?
+
+Warwick Cooke NLP course

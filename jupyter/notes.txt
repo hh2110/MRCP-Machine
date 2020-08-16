@@ -1,0 +1,1 @@
+running docker with the pydatanyc_2019 folder : https://towardsdatascience.com/docker-for-python-development-83ae714468ac

@@ -1,0 +1,32 @@
+short term:
+- classify the 'past-paper' questions and give a topic
+- gold labels - labels that are gold standard - within the data already
+- get silver labels by training a  
+- taking the gold labels and build a classifier to predict the silver labels
+	- will need to tokenize data
+	- remove stopwords
+	- apply Bag of words / TF-IDF
+	- train a classifier to predict silver labels
+		- Bayes classifier, RF (with boosting), 
+	- issue of unequally distributed dataset - figure out what methods there are to combat this
+- create my own embedding to see relationships between words - 
+- mark newman - scispacy - spacy models trained on biomedical text
+- take MNs embedding and create a representation of my data and run through classifier. 
+- check out spacy ( go to for NLP in python)
+- nltk - old school, spacy is newer, more robust
+- check for quantitative way to detemrine if embedding is good vs sense check
+
+long term:
+- predict the answer to a question given: description, question & options
+- seq to seq:
+	- RNN
+	- language models
+	- attention
+	- course by stanford on NLP
+	- will require cloud computing
+
+very long term:
+	- consider how AI in medicine works? 
+	- would an approach of learning from exam questions help in GP AI apps?
+
+

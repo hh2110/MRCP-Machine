@@ -1,0 +1,6 @@
+/.ipynb_checkpoints
+data/
+/jupyter/figures
+/jupyter/.ipynb_checkpoints
+/jupyter/tutorials/.ipynb_checkpoints
+*pyc

@@ -1,0 +1,4 @@
+# RNN podcast
+https://podcasts.google.com/?feed=aHR0cHM6Ly9kYXRhc2tlcHRpYy5saWJzeW4uY29tL3Jzcw&episode=MWZlMDg2MzdlZWYwNzk4ZTIyMWJlMTNmZTg1ZjNhZmQ&hl=en-GB&ved=2ahUKEwi10pHi3I3oAhUPHcAKHRcKA4UQjrkEegQIARAG&ep=6
+- generally we train NNs with one datum at a time, e.g. one image at a time
+- RNNs can work with sequential data - kind of memorise data
